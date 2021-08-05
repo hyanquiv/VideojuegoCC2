@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1627921290 source:c:\users\acer\documents\c++\proyectito\proyectocc2\main.cpp
+	"allegro.h"
+	"juego.h"
+
+1627913256 source:c:\users\acer\documents\c++\proyectito\proyectocc2\src\fondo.cpp
+	"fondo.h"
+	<allegro.h>
+
+1627921369 c:\users\acer\documents\c++\proyectito\proyectocc2\include\fondo.h
+	"Entidades.h"
+
+1627913350 c:\users\acer\documents\c++\proyectito\proyectocc2\include\entidades.h
+	<allegro.h>
+
+1627913399 source:c:\users\acer\documents\c++\proyectito\proyectocc2\src\entidades.cpp
+	"entidades.h"
+
+1627913755 source:c:\users\acer\documents\c++\proyectito\proyectocc2\src\controlgrafico.cpp
+	"controlgrafico.h"
+	"allegro.h"
+	"conio.h"
+
+1627913746 c:\users\acer\documents\c++\proyectito\proyectocc2\include\controlgrafico.h
+
+1627922804 source:c:\users\acer\documents\c++\proyectito\proyectocc2\src\nave.cpp
+	"nave.h"
+	<allegro.h>
+
+1627922769 c:\users\acer\documents\c++\proyectito\proyectocc2\include\nave.h
+	<allegro.h>
+	"Entidades.h"
+	"Tiro.h"
+
+1627921464 source:c:\users\acer\documents\c++\proyectito\proyectocc2\src\juego.cpp
+	"juego.h"
+
+1627921031 c:\users\acer\documents\c++\proyectito\proyectocc2\include\juego.h
+	"fondo.h"
+	"persona.h"
+	"nave.h"
+	"controlgrafico.h"
+
+1627920286 source:c:\users\acer\documents\c++\proyectito\proyectocc2\src\tiro.cpp
+	"tiro.h"
+
+1627920077 c:\users\acer\documents\c++\proyectito\proyectocc2\include\tiro.h
+	"Entidades.h"
+
+1627922684 source:c:\users\acer\documents\c++\proyectito\proyectocc2\src\persona.cpp
+	"persona.h"
+	<allegro.h>
+
+1627920085 c:\users\acer\documents\c++\proyectito\proyectocc2\include\persona.h
+	"entidades.h"
+	"Tiro.h"
+	"nave.h"
+	"fondo.h"
+

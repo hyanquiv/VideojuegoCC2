@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,21 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/controlgrafico.h" />
+		<Unit filename="include/entidades.h" />
+		<Unit filename="include/fondo.h" />
+		<Unit filename="include/juego.h" />
+		<Unit filename="include/nave.h" />
+		<Unit filename="include/persona.h" />
+		<Unit filename="include/tiro.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/controlgrafico.cpp" />
+		<Unit filename="src/entidades.cpp" />
+		<Unit filename="src/fondo.cpp" />
+		<Unit filename="src/juego.cpp" />
+		<Unit filename="src/nave.cpp" />
+		<Unit filename="src/persona.cpp" />
+		<Unit filename="src/tiro.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

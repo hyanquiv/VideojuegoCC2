@@ -1,7 +1,6 @@
 #include "controlgrafico.h"
-
 #include "allegro.h"
-#include "conio.h"
+
 
 int ControlGrafico::IniciaAllegro()
 {

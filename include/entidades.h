@@ -1,6 +1,5 @@
 #ifndef ENTIDADES_H
 #define ENTIDADES_H
-
 #include <allegro.h>
 
 

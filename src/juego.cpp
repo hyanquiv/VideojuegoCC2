@@ -25,30 +25,32 @@ void Juego::Jugar()
 {
 
    int ii=1;
+
    int aciertos=0;
 
+   SAMPLE *sonido1=load_wav("musica.wav");
    BITMAP *fondo2 =load_bitmap("fondo2.bmp", NULL);
 
    BITMAP *doublebmp = create_bitmap(SCREEN_W, SCREEN_H);
-/*
-    n[ii]->setLin(1500);
-    n[ii]->setCol(15);
-    n[ii++]->setVelocidade(5);
+
+   /* n[ii]->setLin(1500);
+    n[ii]->setCol(100);
+    n[ii++]->setVelocidad(3);
     n[ii]->setLin(1250);
-    n[ii]->setCol(10);
-    n[ii++]->setVelocidade(5);
+    n[ii]->setCol(80);
+    n[ii++]->setVelocidad(2);
 
     n[ii]->setLin(1000);
-    n[ii]->setCol(30);
-    n[ii++]->setVelocidade(5);
+    n[ii]->setCol(60);
+    n[ii++]->setVelocidad(1);
     n[ii]->setLin(750);
     n[ii]->setCol(40);
-    n[ii++]->setVelocidade(5);
+    n[ii++]->setVelocidad(2);
 
     n[ii]->setLin(500);
     n[ii]->setCol(20);
-    n[ii++]->setVelocidade(5);
-*/
+    n[ii++]->setVelocidad(1);*/
+
 
 
    while(!key[KEY_ESC])
@@ -74,9 +76,8 @@ void Juego::Jugar()
       {
          n[ii]->Mover();
          n[ii]->Imprimir(doublebmp);
+
       }
-
-
 
       if ( key[KEY_A] )
       {
@@ -89,7 +90,8 @@ void Juego::Jugar()
      int cont = 2 ;
 
       if (  t->Colision_Nave(n[0]) == 1  || t->Colision_Nave(n[1]) == 1 || t->Colision_Nave(n[2]) == 1
-         || t->Colision_Nave(n[3]) == 1  || t->Colision_Nave(n[4]) == 1 || t->Colision_Nave(n[5]) == 1)
+         || t->Colision_Nave(n[3]) == 1  || t->Colision_Nave(n[4]) == 1 || t->Colision_Nave(n[5]) == 1
+          )
 
 
         {
@@ -118,10 +120,11 @@ void Juego::Jugar()
 
 
          blit(doublebmp, screen, 0, 0, 0, 0, SCREEN_W, SCREEN_H);
+
    }
 
-   //libera a memoria do fundo e da imagem de double bufferig
    destroy_bitmap(fondo2);
 
    destroy_bitmap(doublebmp);
+
 }

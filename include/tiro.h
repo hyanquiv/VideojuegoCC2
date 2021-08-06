@@ -1,6 +1,5 @@
 #ifndef TIRO_H
 #define TIRO_H
-
 #include "Entidades.h"
 
 class Tiro : public Entidades{

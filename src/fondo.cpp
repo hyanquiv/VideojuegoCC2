@@ -3,8 +3,8 @@
 
 fondo::fondo() : Entidades("fondo2.bmp")
 {
-    velocidad = 1000;
-    pantallaDElinea = img->h - SCREEN_H; //
+    velocidad = 2;
+    pantallaDElinea = img->h - SCREEN_H;
 }
 
 fondo::fondo(int velocidad)
@@ -16,14 +16,16 @@ fondo::fondo(int velocidad)
 void fondo::crearfondo(BITMAP* bmp)
 {
 
+
+
    pantallaDElinea -= velocidad;
 
    if (pantallaDElinea <= 0)
    {
       blit(img, bmp, 0, img->h + pantallaDElinea, 0, 0, bmp->w, -pantallaDElinea);
-      blit(img, bmp, 0, 0, 0, -pantallaDElinea, bmp->w, SCREEN_H + pantallaDElinea);
+     blit(img, bmp, 0, 0, 0, -pantallaDElinea, bmp->w, SCREEN_H + pantallaDElinea);
 
-      if ( -pantallaDElinea >= SCREEN_H )
+     if ( -pantallaDElinea >= SCREEN_H )
          pantallaDElinea = img->h - SCREEN_H;
 
    } else {

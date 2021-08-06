@@ -4,7 +4,7 @@
 
 Nave :: Nave() : Entidades("covid.bmp",5,5)
 {
-   velocidad = 3;
+   velocidad = 1;
    direccion = 1;
    vivo      = 1;
 }
@@ -51,11 +51,7 @@ void Nave :: Imprimir(BITMAP* bmp)
    {
 
       draw_sprite(bmp, img, col, lin);
-      draw_sprite(bmp, img, col, lin);
-      draw_sprite(bmp, img, col, lin);
-      draw_sprite(bmp, img, col, lin);
-      draw_sprite(bmp, img, col, lin);
-      draw_sprite(bmp, img, col, lin);
+
    }
 }
 

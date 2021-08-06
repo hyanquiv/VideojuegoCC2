@@ -25,8 +25,9 @@ void Persona::MoverIzquierda(BITMAP *db)
    int g =  getg(getpixel(db, col-velocidad, lin));
    int b =  getb(getpixel(db, col-velocidad, lin));
 
-   if (r != 131 || g != 255 || b != 255)
-     col-=velocidad;
+   col-=velocidad;
+   if ( col >= (SCREEN_W - img->w +4))
+        col = SCREEN_W - img->w+4;
 }
 
 void Persona::MoverDerecha(BITMAP *db)

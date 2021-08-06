@@ -1,6 +1,5 @@
 #ifndef JUEGO_H
 #define JUEGO_H
-
 #include "fondo.h"
 #include "persona.h"
 #include "nave.h"

@@ -1,7 +1,5 @@
 #ifndef FONDO_H
 #define FONDO_H
-
-
 #include "Entidades.h"
 
 

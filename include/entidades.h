@@ -12,7 +12,7 @@ class Entidades {
       BITMAP *img2;
       BITMAP *img3;
       BITMAP *explotar;
-      int velocidad;
+      float velocidad;
 
    public:
 

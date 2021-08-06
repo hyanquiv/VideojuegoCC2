@@ -4,6 +4,7 @@
 #include "persona.h"
 #include "nave.h"
 #include "controlgrafico.h"
+#include "linkedlist.h"
 #define N_NAVES 6
 
 
@@ -15,14 +16,14 @@ class Juego {
 
       Persona *t;
 
-      Nave *n[N_NAVES];
+      //implementacion iterator
+
+      LinkedList<Nave> *n;
 
       BITMAP *doublebmp;
 
       //singleton
       static Juego* instance;
-
-      static Juego& getInstance();
 
       Juego();
 
@@ -33,6 +34,8 @@ class Juego {
       Juego& operator=(Juego const&) = delete;
 
    public:
+
+      static Juego& getInstance();
 
       void Jugar();
 

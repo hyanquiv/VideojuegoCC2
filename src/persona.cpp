@@ -5,7 +5,7 @@ Persona::Persona() : Entidades("Personita.bmp","Personita_izq.bmp","Personita_de
 {
    lin = SCREEN_H - img->h - 10;
    col = ( SCREEN_W / 2 ) - ( img->w / 2 );
-   velocidad = 1;
+   velocidad = 0.001;
    ti = new Tiro();
    puntos=0;
 }
@@ -26,8 +26,9 @@ void Persona::MoverIzquierda(BITMAP *db)
    int b =  getb(getpixel(db, col-velocidad, lin));
 
    col-=velocidad;
-   if ( col >= (SCREEN_W - img->w +4))
-        col = SCREEN_W - img->w+4;
+   if ( col <=0 ){
+        col = 0 ;
+   }
 }
 
 void Persona::MoverDerecha(BITMAP *db)

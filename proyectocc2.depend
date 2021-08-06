@@ -115,3 +115,21 @@
 1627930246 source:c:\users\acer\desktop\proyectocc2\src\tiro.cpp
 	"tiro.h"
 
+1628228346 source:c:\users\acer\documents\github\videojuegocc2\src\controlgrafico.cpp
+	"controlgrafico.h"
+	"allegro.h"
+
+1627913746 c:\users\acer\documents\github\videojuegocc2\include\controlgrafico.h
+
+1628231412 source:c:\users\acer\documents\github\videojuegocc2\src\entidades.cpp
+	"entidades.h"
+
+1628237300 c:\users\acer\documents\github\videojuegocc2\include\entidades.h
+	<allegro.h>
+
+1627930246 source:c:\users\acer\documents\github\videojuegocc2\src\tiro.cpp
+	"tiro.h"
+
+1628225121 c:\users\acer\documents\github\videojuegocc2\include\tiro.h
+	"Entidades.h"
+

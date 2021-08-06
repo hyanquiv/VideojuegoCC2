@@ -38,6 +38,7 @@
 		<Unit filename="include/entidades.h" />
 		<Unit filename="include/fondo.h" />
 		<Unit filename="include/juego.h" />
+		<Unit filename="include/linkedlist.h" />
 		<Unit filename="include/nave.h" />
 		<Unit filename="include/persona.h" />
 		<Unit filename="include/tiro.h" />

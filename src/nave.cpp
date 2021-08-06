@@ -4,8 +4,8 @@
 
 Nave :: Nave() : Entidades("covid.bmp",5,5)
 {
-   velocidad = 1;
-   direccion = 1;
+   velocidad = 0.000001;
+   direccion = 2;
    vivo      = 1;
 }
 

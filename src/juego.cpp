@@ -13,8 +13,9 @@ Juego::Juego()
    int i;
    t  = new Persona();
 
+   Nave aux();
    for (i=0; i<N_NAVES; i++)
-      n[i] = new Nave();
+      n->push_back(aux);
 
    c  = new fondo();
 }
@@ -24,8 +25,7 @@ Juego::~Juego()
 
    int i;
    delete t;
-   for (i=0; i<N_NAVES; i++)
-      delete n[i];
+   delete n;
 }
 
 void Juego::Jugar()
@@ -63,7 +63,7 @@ void Juego::Jugar()
    while(!key[KEY_ESC])
    {
 
-   c->crearfondo(fondo2);
+      c->crearfondo(fondo2);
 
       draw_sprite(doublebmp, fondo2, 0, 0);
 
@@ -79,11 +79,10 @@ void Juego::Jugar()
       if ( key[KEY_DOWN] )
          t->MoverAbajo();
 
-      for (ii=0; ii<N_NAVES; ii++)
+      for(LinkedList<Nave>::iterator iter=n.begin();iter != n.end(); iter++)
       {
-         n[ii]->Mover();
-         n[ii]->Imprimir(doublebmp);
-
+         *iter->Mover();
+         *iter->Imprimir(doublebmp);
       }
 
       if ( key[KEY_A] )
@@ -94,7 +93,7 @@ void Juego::Jugar()
 
       t->MoverTiro();
 
-     int cont = 2 ;
+     int cont = 2000 ;
 
       if (  t->Colision_Nave(n[0]) == 1  || t->Colision_Nave(n[1]) == 1 || t->Colision_Nave(n[2]) == 1
          || t->Colision_Nave(n[3]) == 1  || t->Colision_Nave(n[4]) == 1 || t->Colision_Nave(n[5]) == 1

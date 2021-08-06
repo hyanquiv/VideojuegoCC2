@@ -1,5 +1,12 @@
 #include "juego.h"
 
+Juego& Juego::getInstance()
+{
+    if(instance == nullptr)
+        Juego.instance = new Juego();
+    return instance;
+}
+
 Juego::Juego()
 {
 

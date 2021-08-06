@@ -42,9 +42,10 @@ int main()
    if ( cg->IniciaAllegro() != 1 )
       return 1;
 
-   Juego *j = new Juego();
+   Juego *j;
 
-   j->Jugar();
+   //aplicacion singleton
+   j->getInstance();
 
    delete j;
    blit(MORIDO,buffer,0,0,0,0,640,480);

@@ -19,9 +19,20 @@ class Juego {
 
       BITMAP *doublebmp;
 
-   public:
+      //singleton
+      static Juego* instance;
+
+      static Juego& getInstance();
+
       Juego();
+
       ~Juego();
+
+      Juego(Juego const&) = delete;
+
+      Juego& operator=(Juego const&) = delete;
+
+   public:
 
       void Jugar();
 
